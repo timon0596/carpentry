@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/reset">
 	<link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
 	<link rel="stylesheet" href="css/carpentry1.css">
+	<link rel="stylesheet" href="css/carpentry_nav_menu.css">
 	
 	<title>c1</title>
 </head>
@@ -14,28 +15,31 @@
 		<div class="row">
 			<div class="col-md-6"><img class="img-fluid" src="http://ippetrov.ru/wp-content/themes/ippetrov/img/logo.png" alt=""></div>
 			<div class="col-md-6">
-				<div class="row">
-					<ul class="contact-info">
-						<li class="time">часы работы: пн-чт 9:00-21:00</li>
-						<li class="search">
-							<form method="get" id="search-form-block">
-								<div class="search-text">
-									<input type="text" placeholder="что искать?" required>
-								</div>
-								<div class="search-action">
-									<input type="submit" name="" id="" value="поиск">
-								</div>	
-							</form>
-						</li>
-						<li class="telephone">
-							<i class="fa fa-phone" aria-hidden="true"></i>
+	
+				
+				<nav class="nav-menu-container">
+	<!--КОНТАКТЫ И ПОИСК-->				
+				<ul class="contact-info">
+				<li class="time">часы работы: пн-чт 9:00-21:00</li>
+				<li class="search">
+				<form method="get" id="search-form-block">
+					<div class="search-text">
+					<input type="text" placeholder="что искать?" required>
+					</div>
+					<div class="search-action">
+					<input type="submit" name="" id="" value="поиск">
+					</div>	
+				</form>
+				</li>
+				<li class="telephone">
+				<i class="fa fa-phone" aria-hidden="true"></i>
 							<ul>
 								<li><a href="tel:+7 981-981-12-34">+7 981-981-1234</a></li>
 								<li><a href="tel:+7 911-814-12-34">+7 911-814-1234</a></li>
-								<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">обратный звонок</button></li>
+								<li><button type="button" class="btn mybtn btn-primary" data-toggle="modal" data-target="#exampleModal">обратный звонок</button></li>
 							</ul>
 							
-							<!--МОДАЛЬНОЕ ОКНО-->							
+				<!--МОДАЛЬНОЕ ОКНО-->							
 							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 							<div class="modal-content">
@@ -52,17 +56,28 @@
 							</div>
 							</form>
 							</div>
-							<div class="modal-footer">
-							
+							<div class="modal-footer">						
 							<input type="submit" class="btn btn-primary" value="заказать звонок"></button>
 							</div>
 							</div>
 							</div>
 							</div>
-							<!--МОДАЛЬНОЕ ОКНО-->
-						</li>
-					</ul>
-				</div>
+				<!--МОДАЛЬНОЕ ОКНО-->
+				</li>
+				</ul>				
+	<!--КОНТАКТЫ И ПОИСК-->
+				<!--MENU-->				
+					
+						<ul class="menu">
+						<li><a href="#"><p>главная</p></a></li>
+						<li><a href="#"><p>производство</p></a></li>
+						<li><a href="#"><p>о компании</p></a></li>
+						<li><a href="#"><p>контакты</p></a></li>
+						<li><a href="#"><p>цены</p></a></li>
+						</ul>
+				<!--MENU-->					
+				</nav>
+				
 			</div>
 		</div>
 	</div>

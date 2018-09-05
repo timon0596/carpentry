@@ -1,0 +1,56 @@
+.nav-menu-container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	align-content: stretch
+	align-items: stretch
+	height: 100%
+	flex-wrap: wrap
+.menu
+	width: 100%
+	margin: 0px
+	padding: 15px 0px
+	list-style-type: none
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-evenly
+	align-content: stretch
+	align-items: center
+	border: 1px solid orange	
+	& li 
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-grow: 1
+		justify-content: center
+		a
+		 display: flex
+		 height: 100px
+		 width: 100%
+		 text-decoration: none
+		 text-transform: uppercase
+		 color: black
+		 font-weight: 500		 
+		 align-items: center
+		 justify-content: center
+		 p
+		 		display: block
+		 		position: relative
+		 		margin: 0px
+		 &:hover
+		 	color: #96bf34
+		 	p::before
+		 		content: ""
+		 		position: absolute
+		 		border: 1px solid #96bf34
+		 		bottom: 0
+		 		width: 100%
+			

@@ -69,3 +69,10 @@ body {
 
 .col-md-6 > img {
   margin-top: 15px; }
+
+.mybtn {
+  background-color: #96bf34;
+  border: 1px solid #acd155; }
+  .mybtn:hover {
+    background-color: #acd155;
+    border: 1px solid #779729; }
