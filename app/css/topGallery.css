@@ -1,0 +1,58 @@
+body {
+  height: 100%;
+  background-color: white; }
+
+.container {
+  height: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; }
+
+.gallery {
+  width: 80%;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  warp: no-wrap;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap; }
+
+#prev:before {
+  font-family: FontAwesome;
+  content: "\f060";
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 15px);
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  background: rgba(128, 128, 128, 0.5); }
+
+#next:before {
+  font-family: FontAwesome;
+  content: "\f061";
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 15px);
+  cursor: pointer;
+  color: white;
+  background: rgba(128, 128, 128, 0.5); }
+
+.item {
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease; }
+
+.item img {
+  width: 100%; }
