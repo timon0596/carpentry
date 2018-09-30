@@ -11,6 +11,7 @@ var hgt = document.getElementsByClassName("container")[0];
 var wdt;
 var lngt = items.length;
 var tr = item1.style.transition;
+
 function transFunc (lngt){
 	hgt.style.height = parseFloat(getComputedStyle(item1).height) 
 	+ "px";
@@ -22,7 +23,8 @@ function transFunc (lngt){
 transFunc(lngt);
 window.onresize = function (){transFunc(lngt);} 
 var galInnerHTML = gal.innerHTML;
-document.getElementById("next").onclick = function(){	
+function next(){
+
 	for(let i of items){
 		i.style.transition = tr;
 		i.style.left = parseFloat(i.style.left) - wdt + 'px';
@@ -36,5 +38,10 @@ document.getElementById("next").onclick = function(){
 		});
 	}
 };
+document.getElementById("next").onclick = function(){
+	
+	
+	next();
+}
 
 
