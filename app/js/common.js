@@ -46,7 +46,7 @@ transFunc(lngt);
 window.onresize = function (){transFunc(lngt);} 
 
 function next(){
-
+document.getElementById("next").onclick = "";
 	for(let i of items){
 		i.style.transition = tr;
 		i.style.left = parseFloat(i.style.left) - wdt + 'px';
@@ -56,17 +56,14 @@ function next(){
 					for(let j of items){j.style.transition = 'none';}
 					transFunc(lngt);
 				}
+			document.getElementById("next").onclick = function(){next();}
 			}
 		});
 	}
 };
-document.getElementById("next").onclick = function(){
-	
-	
-	next();
-}
+document.getElementById("next").onclick = function(){next();}
 function prev(){
-
+	document.getElementById("prev").onclick = "";
 	for(let i of items){
 		i.style.transition = tr;
 		i.style.left = parseFloat(i.style.left) + wdt + 'px';
@@ -76,14 +73,9 @@ function prev(){
 					for(let j of items){j.style.transition = 'none';}
 					transFunc2(lngt);
 				}
+			document.getElementById("prev").onclick = function(){prev();}
 			}
 		});
 	}
 };
-document.getElementById("prev").onclick = function(){
-	
-	
-	prev();
-}
-
-
+document.getElementById("prev").onclick = function(){prev();}
